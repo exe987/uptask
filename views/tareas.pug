@@ -1,0 +1,10 @@
+extends layout
+block contenido
+    .contenido-principal
+        h1 #{nombrePagina} - #{proyecto.nombre}
+        //TO-DO FORM
+        //TO-DO LISTADO DE PENDIENTES
+        //ACCIONES QUE SE PUEDEN REALIZAR
+        .contenedor-acciones
+             a(href=`/proyecto/editar/${proyecto.id}` class='boton') Editar Proyecto
+             button#eliminar-proyecto(type='button' class='boton eliminar') Eliminar
